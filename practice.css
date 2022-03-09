@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    /* background-color: rgb(184, 235, 250); */
+    /* background-image: linear-gradient(rgb(184, 235, 250),rgb(114, 195, 209)); */
+   
+    
+}
+
+/* header  */
+#header{
+  font-family:'Train One', cursive;
+  color: rgb(27, 247, 56);
+   
+  border: 1px solid black;
+   text-shadow: 3px 3px 4px black;
+  margin-bottom: 5px;
+  padding-bottom: 30px;
+   
+  
+   background-image: url(headerimg.jpg);
+}
+/* nav bar dropdown  */
+.navbar{
+     
+  position: sticky;
+  top: 2px;
+  z-index: 1;
+}
+.child-drop{
+  background-color: #55ACEE;
+  padding: 0px;
+  margin: 0px;
+   border-radius: 10px;
+}
+.child-drop li {
+  color: #000;
+  height: 40px;
+  padding-top: 5px;
+  
+}
+ 
+.child-drop li a{
+  text-align: center;
+  
+}
+
+  .dropdown-menu li:hover,.dropdown-menu li:focus,.dropdown-menu li a:hover,.dropdown-menu li a:focus{
+  background: rgb(113, 248, 79);
+   
+ }
+  
+  
+  
+ 
+/* slideshow  */
+.mySlides {display: none;}
+.mySildes img {
+    vertical-align: middle;
+     
+      
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  width: 98%;
+  min-height: 250px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #fcfafa;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+      font-size: 11px;
+      font-weight: 300;
+  }
+   
+}
+/* about section school  */
+
+.information{
+  display: flex;
+   flex-wrap: wrap;
+   
+  justify-content: space-around;
+}
+.about {
+   
+  padding: 0px;
+  
+  background: #fff;
+}
+.aboutHeading {
+  background: rgb(153, 7, 7);
+  padding: 10px;
+  text-align: center;
+}
+.aboutHeading h1{
+  color: #f2f2f2;
+}
+.about p{
+  margin-top: 10px;
+  padding: 0 20px 20px 20px;
+} 
+.about:focus,.about:hover{
+  box-shadow: 1px 1px 6px 4px rgba(0, 0, 0, 0.342);
+  cursor: pointer;
+  border-radius: 15px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.336);
+}
+  @media screen and (min-width: 950px){
+  .about{
+    margin: 15px 10px 15px 10px;
+    width: 31%;
+    background: #fff;
+  }
+}
+@media screen and (min-width: 750px){
+  .about{
+    margin: 15px 10px 15px 10px;
+    width: 45%;
+    background: #fff;
+  }
+}
+
+
+#more{
+  display: none;
+}
+ 
+
+.row .col-md-4{
+  min-height: 600px;
+}
+ 
+.thumbnails{
+  text-align: center;
+   min-height: 580px;
+   border-radius: 10px;
+}
+ 
+.thumbnails img{
+  margin-top: 5px;
+   
+  
+  border-radius: 20%;
+  border-bottom: 4px solid gray;
+
+}
+ 
+.thumbnails img:focus,.thumbnails img:hover{
+  box-shadow:  1px 1px 6px 4px rgba(0, 0, 0, 0.242); 
+  cursor: pointer;
+}
+ 
+
+ 
+  
+ /* facility profile  */
+ .facility-profile{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  flex-wrap: wrap;
+ }
+ .aboutFacility{
+   background-color: #f2f2f2;
+   width: 270px;
+   padding: 20px;
+   border-radius: 10px;
+   margin-top:20px ;
+ }
+  
+.aboutFacility div img{
+      width: 20%;
+      border-radius: 50%;
+      
+      padding: 3px;
+      border: 1px solid black;
+}
+.aboutFacility:hover,.aboutFacility:focus{
+  box-shadow:  1px 1px 6px 4px rgba(0, 0, 0, 0.242); 
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* image gallary */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* footer   */
+footer{
+  margin-top: 30px;
+  background-color: black;
+  height: 250px;
+  padding: 20px ;
+}
+
+ /* size way icons  */
+
+ footer .icon-bar{
+  position: relative;
+     
+   display: flex;
+   flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+  /* -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+}
+footer .icon-bar a{
+  display:block;
+  width: max-content;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+   margin-left: 0px;
+  color: aliceblue;
+  transition: all 0.4s ease;
+}
+footer .icon-bar a:hover{
+  background: black;
+}
+.facebook {
+ background: #3B5998;
+ color: white;
+}
+
+.twitter {
+ background: #55ACEE;
+ color: white;
+}
+
+.google {
+ background: #dd4b39;
+ color: white;
+}
+
+.linkedin {
+ background: #007bb5;
+ color: white;
+}
+
+.youtube {
+ background: #bb0000;
+ color: white;
+}

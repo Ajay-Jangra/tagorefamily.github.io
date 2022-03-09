@@ -1,0 +1,229 @@
+
+*{
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'noto_sansmedium';
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #272727;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+header{
+     
+    font-size: 50px;
+    height: 200px;
+    background-color: deepskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* nav bar  */
+nav{
+    background-color: black;
+    padding: 30px;
+    font-size: 22px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+     
+}
+ .dropdown-menu{
+     margin: 0px;
+     /* padding: 20px;
+     border-radius: 20px; */
+     background: lightgrey;
+ }
+ .dropdown-item{
+     padding: 10px;
+     margin: 0px;
+ }
+ .dropdown-item:hover{
+     background: black;
+     color: #fff;
+ }
+
+ /* table previous year  */
+ .content {
+     
+    justify-content: space-around;
+  }
+    
+  .content-link {
+     float: left;
+     width: 30%;
+      margin-top: 30px;
+     max-height: 80vh;
+     overflow-y: scroll;
+     text-align: center;
+  }
+  
+  /* Clearfix (clear floats) */
+  .content::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .content-link table {
+    /* border-collapse: collapse;
+    border-spacing: 2px; */
+    width: 100%;
+    border: 1px solid #ddd;
+    
+  }
+  
+  th, td {
+      font-size: 16px;
+    text-align: left;
+    padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  @media  (max-width:927px){
+    .content-link{
+        width: 50%;
+    }
+ } 
+ @media  (max-width:567px){
+     .content-link{
+         width: 80%;
+     }
+ } 
+
+/* container division */
+.container {
+    max-width: 1340px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* row division */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* after row division */
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+ /* h1 in container */
+h1 {
+    display: block;
+    font-size: 3rem;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+@media (max-width: 767px){
+.examinfo_wrap .content h1 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    
+}
+}
+.examinfo_wrap .content h1 {
+    font-size: 32px;
+    color: #31bfce;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #272727;
+    font-weight: 700;
+    margin: 0 auto 30px;
+    line-height: inherit;
+    font-size: 2rem;
+}
+/* paragraph in content  */
+@media (max-width: 767px){
+.examinfo_wrap .content p {
+    font-size: 13px;
+    line-height: 19px;
+    margin: 0 0 10px;
+  }
+}
+.examinfo_wrap .content p {
+    
+    color: #232323;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+}
+  /* iits list stylling  */
+
+  .bbs_list{
+      border-top: 2px solid black;
+  }
+  .bbs_list table{
+    display: table;
+      width: 100%;
+      border-collapse: collapse;
+      border-color: grey;
+      text-indent: initial;
+      border-spacing: 2px;
+  }
+  tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.content .bbs_list tbody th, .content .bbs_list td {
+    text-align: left;
+    color: #232323;
+}
+@media (max-width: 767px){
+.examinfo_wrap table th {
+    font-size: 16px !important;
+    line-height: 18px !important;
+  }
+}
+.bbs_list tbody th {
+    background: #f5f6f7;
+    color: #333;
+}
+.bbs_list tbody th, .bbs_list td {
+    padding: 15px 6px 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    border-bottom: 1px solid #d6dadd;
+    line-height: 16px;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+th {
+    text-align: inherit;
+}
